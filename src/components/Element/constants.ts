@@ -1,8 +1,9 @@
 import { HTMLProps } from "react";
 
-import { RFTheme } from "../../styles/theme";
+import { FRLightTheme } from "../../styles/ThemeLight";
+import { FRDarkTheme } from "../../styles/ThemeDark";
 
-export type ThemeType = typeof RFTheme;
+export type ThemeType = typeof FRLightTheme | typeof FRDarkTheme;
 
 export interface ThemeProps {
     theme ? : ThemeType;

@@ -5,14 +5,15 @@ import merge from "lodash/merge";
 import { Element } from "../Element/Element";
 import { CommonAndHTMLProps, ThemeProps } from "../Element/constants";
 
-import { RFTheme } from "../../styles/theme";
+import { FRLightTheme } from "../../styles/ThemeLight";
+import { FRDarkTheme } from "../../styles/ThemeDark";
 import { GlobalStyled as DynamicGlobalStyled } from "./Global.styled";
 import { GlobalStaticStyled as StaticGlobalStyled } from "../../styles/GlobalStatic.styled";
 
 
 export type ThemeProviderElementType = HTMLDivElement;
 export type ThemeLabel               = "light" | "dark";
-export type Theme                    = typeof RFTheme;
+export type Theme                    = typeof FRLightTheme | typeof FRDarkTheme;
 export type LabelledThemes           = Record<ThemeLabel, Theme>;
 
 export interface GlobalStyledProps extends ThemeProps { }
@@ -21,8 +22,8 @@ export interface ThemeProviderProps extends Omit<CommonAndHTMLProps<ThemeProvide
 }
 
 export const CreateThemeProvider = (themes: LabelledThemes) => {
-    themes["light"] = merge({}, RFTheme, themes["light"]);
-    themes["dark"] = merge({}, RFTheme, themes["dark"]);
+    themes["light"] = merge({}, FRLightTheme, themes["light"]);
+    themes["dark"] = merge({}, FRDarkTheme, themes["dark"]);
     return ({
         theme,
         children,
@@ -48,6 +49,6 @@ export const CreateThemeProvider = (themes: LabelledThemes) => {
 
 // For backward compatibility
 export const ThemeProvider = CreateThemeProvider({
-    light : RFTheme,
-    dark  : RFTheme
+    light : FRLightTheme,
+    dark  : FRDarkTheme
 });

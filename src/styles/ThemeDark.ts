@@ -1,4 +1,4 @@
-import { lighten } from "polished";
+import { lighten, darken } from "polished";
 
 import { baseColors } from "./BaseColors";
 
@@ -11,12 +11,12 @@ export const mainColors = {
     accent   : baseColors.green80,
 }
 
-export const RFTheme = {
+export const FRDarkTheme = {
     mainColors,
 
     //  BASICS  ///////////////////////////////////////////////////////////////
     body : {
-        bg : baseColors.white,
+        bg : `${darken(0.32, baseColors.blue)}`,
     },
 
 
@@ -30,14 +30,14 @@ export const RFTheme = {
 
         paras : {
             size       : 1,
-            color      : baseColors.grey,
+            color      : baseColors.indigo60,
             weight     : 400,
             lineHeight : 1.64,
         },
 
         headings : {
             font       : "sans-serif",
-            color      : mainColors.shade,
+            color      : baseColors.indigo40,
             weight     : 600,
             multiplier : 1.24,
             lineHeight : 1.24
@@ -59,13 +59,13 @@ export const RFTheme = {
 
         code : {
             inline : {
-                bg    : baseColors.blue10,
-                text  : baseColors.blue90,
+                bg    : baseColors.indigo,
+                text  : baseColors.indigo60,
                 scale : 80
             },
             block : {
-                bg         : `${lighten(0.02, baseColors.slate10)}`,
-                text       : baseColors.blue70,
+                bg         : `${darken(0.16, baseColors.indigo)}`,
+                text       : baseColors.indigo,
                 scale      : 80,
                 lineHeight : 1.8
             },
@@ -92,7 +92,7 @@ export const RFTheme = {
                     namespace   : baseColors.green80,
                     number      : baseColors.green80,
                     operator    : baseColors.pistachio,
-                    plain       : baseColors.grey,
+                    plain       : baseColors.indigo40,
                     prolog      : baseColors.grey90,
                     property    : baseColors.red90,
                     punctuation : baseColors.grey60,
@@ -215,15 +215,15 @@ export const RFTheme = {
     //  RULE  /////////////////////////////////////////////////////////////////
     hr : {
         primary : {
-            bg     : baseColors.blue80,
+            bg     : baseColors.indigo60,
             height : "1px"
         },
         secondary : {
-            bg     : baseColors.slate40,
+            bg     : baseColors.indigo80,
             height : "1px"
         },
         tertiary : {
-            bg     : baseColors.slate20,
+            bg     : baseColors.indigo,
             height : "1px"
         }
     },
@@ -289,17 +289,17 @@ export const RFTheme = {
         isCollapsed : {
             label : {
                 text : baseColors.white,
-                bg   : mainColors.hue
+                bg   : `${darken(0.04, baseColors.indigo)}`
             }
         },
 
         header : {
-            bg           : baseColors.white,
-            borderBottom : baseColors.slate10
+            bg           : `${darken(0.24, baseColors.indigo)}`,
+            borderBottom : `${darken(0.24, baseColors.indigo)}`
         },
 
         body : {
-            bg : baseColors.white,
+            bg : `${darken(0.24, baseColors.indigo)}`,
         },
 
         icons : {
@@ -330,19 +330,19 @@ export const RFTheme = {
 
         links : {
             default : {
-                bg     : baseColors.white,
-                text   : mainColors.shade,
+                bg     : `${darken(0.24, baseColors.indigo)}`,
+                text   : baseColors.indigo40,
                 scale  : 100,
                 weight : 600,
             },
             onHover : {
-                bg   : baseColors.slate10,
-                text : mainColors.hue,
+                bg   : `${darken(0.16, baseColors.indigo)}`,
+                text : baseColors.indigo60,
             },
             isSelected : {
-                bg     : baseColors.white,
-                border : mainColors.hue,
-                text   : mainColors.hue,
+                bg     : baseColors.indigo,
+                border : baseColors.indigo,
+                text   : baseColors.indigo,
             },
             hasAlert : {
                 bg : baseColors.red70
@@ -354,14 +354,14 @@ export const RFTheme = {
                 weight : 600,
             },
             default: {
-                bg     : baseColors.white,
-                text   : `${lighten(0.24, mainColors.shade)}`,
+                bg     : `${darken(0.16, baseColors.indigo)}`,
+                text   : `${lighten(0.24, baseColors.indigo)}`,
                 weight : 400,
                 scale  : 92,
             },
             onHover : {
                 bg   : baseColors.slate10,
-                text : mainColors.hue
+                text : `${darken(0.24, baseColors.indigo)}`
             },
             chevron : {
                 border : baseColors.slate40
@@ -371,8 +371,8 @@ export const RFTheme = {
 
 
         footer : {
-            bg        : baseColors.white,
-            borderTop : baseColors.slate10
+            bg        : `${darken(0.24, baseColors.indigo)}`,
+            borderTop : `${darken(0.24, baseColors.indigo)}`
         }
     },
 
@@ -402,12 +402,12 @@ export const RFTheme = {
 
     //  TABLE  ////////////////////////////////////////////////////////////////
     table : {
-        bg      : baseColors.white,
-        text    : mainColors.shade,
-        border  : baseColors.slate40,
+        bg      : `${darken(0.16, baseColors.indigo)}`,
+        text    : baseColors.indigo60,
+        border  : `${darken(0.32, baseColors.indigo)}`,
         striped : {
             header : {
-                bg : baseColors.blue40,
+                bg : `${darken(0.32, baseColors.indigo)}`,
             },
             cell : {
                 bg : baseColors.slate20,
@@ -415,7 +415,7 @@ export const RFTheme = {
         },
         onHover : {
             bg   : baseColors.amber20,
-            text : mainColors.shade
+            text : baseColors.indigo60
         }
     },
 
