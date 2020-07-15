@@ -139,6 +139,8 @@ export const ButtonStyled = styled.button`
         pointer-events : none;
     }
 
+
+    // TODO: ADD SPINNER COLOUR
     &.with-loader::after {
         display             : block;
         position            : absolute;

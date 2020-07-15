@@ -29,8 +29,9 @@ export const FRLightTheme = {
         },
 
         paras : {
-            size       : 1,
+            font       : "sans-serif",
             color      : baseColors.grey,
+            size       : 1,
             weight     : 400,
             lineHeight : 1.64,
         },

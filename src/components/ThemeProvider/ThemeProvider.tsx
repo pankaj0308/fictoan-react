@@ -24,27 +24,26 @@ export interface ThemeProviderProps extends Omit<CommonAndHTMLProps<ThemeProvide
 export const CreateThemeProvider = (themes: LabelledThemes) => {
     themes["light"] = merge({}, FRLightTheme, themes["light"]);
     themes["dark"] = merge({}, FRDarkTheme, themes["dark"]);
-    return ({
-        theme,
-        children,
-        ...props
-    }: ThemeProviderProps) => {
-        return (
-            <>
-                {/* Styles that don't need to be computed */}
-                <StaticGlobalStyled />
+return ({
+    theme,
+    children,
+    ...props
+}: ThemeProviderProps) => {
+    return (
+        <>
+            {/* Styles that don't need to be computed */}
+            <StaticGlobalStyled />
 
-                <Element<ThemeProviderElementType>
-                    as={TP}
-                    theme={themes[theme]}
-                    {...props}
-                >
-                    <DynamicGlobalStyled />
-                    {children}
-                </Element>
-            </>
-        );
-    }
+            <Element<ThemeProviderElementType>
+                as={TP}
+                theme={themes[theme]}
+                {...props}
+            >
+                <DynamicGlobalStyled />
+                {children}
+            </Element>
+        </>
+    )}
 }
 
 // For backward compatibility

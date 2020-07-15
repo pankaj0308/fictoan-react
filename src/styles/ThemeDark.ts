@@ -29,6 +29,7 @@ export const FRDarkTheme = {
         },
 
         paras : {
+            font       : "sans-serif",
             size       : 1,
             color      : baseColors.indigo60,
             weight     : 400,
