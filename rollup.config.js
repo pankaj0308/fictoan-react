@@ -2,6 +2,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import url from "@rollup/plugin-url";
 import typescript from "rollup-plugin-typescript2";
+import { terser } from "rollup-plugin-terser";
 
 import pkg from "./package.json";
 
@@ -30,7 +31,9 @@ export default {
         "@types/styled-components",
         "lodash/merge",
         "react",
-        "styled-components"
+        "styled-components",
+        "prismjs",
+        "prism-react-renderer"
     ],
     plugins: [
         typescript(),
@@ -43,6 +46,7 @@ export default {
             namedExports: {
                 "node_modules/lodash/lodash.js": ["merge"]
             }
-        })
+        }),
+        terser()
     ]
 };
