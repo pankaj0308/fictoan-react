@@ -55,4 +55,23 @@ export const TabsStyled = styled.section`
     }
 
     hr { margin : 0 0 16px 0; }
+
+    .tabs-content {
+        opacity: 0;
+        animation: fade-in 1s ease-in-out forwards;
+        transition: opacity 1s ease-in-out;
+
+        .exiting {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 `;
