@@ -3,7 +3,6 @@ import resolve from "@rollup/plugin-node-resolve";
 import url from "@rollup/plugin-url";
 import typescript from "rollup-plugin-typescript2";
 import { terser } from "rollup-plugin-terser";
-import babel, { getBabelOutputPlugin } from "@rollup/plugin-babel";
 const createStyledComponentsTransformer = require('typescript-plugin-styled-components').default;
 const styledComponentsTransformer = createStyledComponentsTransformer({
     minify: true
@@ -14,7 +13,7 @@ import pkg from "./package.json";
 // const production = !process.env.ROLLUP_WATCH;
 const extensions = [".ts", ".tsx", ".js", ".jsx"];
 
-export default [{
+export default {
     input: "src/index.tsx",
     output: [
         {
@@ -38,18 +37,18 @@ export default [{
         "react",
         "styled-components",
         "prismjs",
-        "prism-react-renderer"
+        "prism-react-renderer",
+        "framer-motion"
     ],
     plugins: [
         typescript({
-            // clean: true,
+            clean: true,
             transformers: [
                 () => ({
                     before: [styledComponentsTransformer],
                 }),
             ],
         }),
-        // typescript(),
         url(),
         resolve({
             extensions
@@ -60,18 +59,6 @@ export default [{
                 "node_modules/lodash/lodash.js": ["merge"]
             }
         }),
-        babel({
-            babelHelpers: "runtime",
-            exclude: "node_modules/**",
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-            plugins: ["babel-plugin-styled-components"]
-        }),
-        // getBabelOutputPlugin({
-        //     // babelHelpers: "runtime",
-        //     exclude: "node_modules/**",
-        //     presets: ["@babel/preset-env", "@babel/preset-react"],
-        //     // plugins: ["babel-plugin-styled-components"]
-        // }),
         terser()
     ]
-}]
+};
