@@ -86,7 +86,7 @@ function Home() {
                         A performant and intuitive framework for quickly iterating UI design with code
                     </Heading>
                     <Heading as="h4" textColour="grey-40" marginBottom="micro">
-                        v0.41.19
+                        v0.43.1
                     </Heading>
 
                     <Element as="div" className="wrapping-list" marginBottom="micro">
