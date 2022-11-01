@@ -16,7 +16,7 @@ Fictoan is an intuitive framework for designers looking to code and rapidly iter
 - All attributes are intuitive and in plain English.
 - Most attributes are also the same across different components.
 
-## Getting started
+## Installation
 Install using `yarn`:
 ```sh
 yarn add fictoan-react
@@ -51,6 +51,23 @@ Storybook recipe used for this project: https://github.com/storybookjs/storybook
 
 ## Contributing
 You can view the contributing guide [here](.github/CONTRIBUTING.md).
+
+## Development
+For development setup run following commands:
+```sh
+git clone https://github.com/fictoan/fictoan-react.git
+cd fictoan-react
+yarn
+yarn build
+```
+After the above setup, run few commands for `fictoan-docs` setup :
+```sh
+cd docs
+yarn
+yarn dev
+```
+
+
 
 ## License
 Licensed under the [MIT License](LICENSE).
