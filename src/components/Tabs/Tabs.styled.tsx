@@ -53,6 +53,7 @@ export const TabsStyled = styled.section`
                 border           : 3px solid ${props => props.theme.tabs.label.hasAlert.circle.border};
                 width            : 14px;
                 height           : 14px;
+                content          : "";
                 background-color : ${props => props.theme.tabs.label.hasAlert.circle.bg};
                 border-radius    : 50%;
             }

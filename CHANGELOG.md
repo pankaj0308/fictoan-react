@@ -1,5 +1,8 @@
 # CHANGELOG
 
+### 0.43.1
+- Fix missing `hasAlert` prop to `Tabs`
+
 ### 0.43.0
 - Fix npm publish action workflow
 - Fix unique key issue for `Tabs`
