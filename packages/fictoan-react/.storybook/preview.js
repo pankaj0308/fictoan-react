@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { FictoanTheme } from "../assets/theme";;
+import { FictoanTheme } from "../../fictoan-react/src/styles/theme";;
 export const parameters = {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {

@@ -1,6 +1,6 @@
 <p align="center" style="color: #343a40">
-  <a href="https://fictoan.io"><img src="./assets/images/fictoan-logo.svg" alt="emotion" height="150" width="150"></a>
-  <h1 align="center">Fictoan</h1>
+  <a href="https://fictoan.io"><img src="fictoan-logo.svg" alt="emotion" height="150" width="150"></a>
+  <h1 align="center">Fictoan-React</h1>
 </p>
 <p align="center" style="font-size: 1.2rem;">React version of the Fictoan framework</p>
 <p align="center">
@@ -57,11 +57,13 @@ For development setup run following commands:
 ```sh
 git clone https://github.com/fictoan/fictoan-react.git
 cd fictoan-react
-yarn setup
+yarn
+yarn build
 ```
 After the above setup, run few commands for `fictoan-docs` setup :
 ```sh
-cd fictoan-docs
+cd docs
+yarn
 yarn dev
 ```
 
@@ -69,3 +71,4 @@ yarn dev
 
 ## License
 Licensed under the [MIT License](LICENSE).
+
