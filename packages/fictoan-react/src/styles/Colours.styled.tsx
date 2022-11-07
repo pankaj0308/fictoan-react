@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 import { defaultColours } from "./DefaultColours";
-import { GlobalStyledProps } from "../components/ThemeProvider/ThemeProvider";
+import { globalVariables } from "./theme";
 
 
 export const ColoursStyled = css`
@@ -10,7 +10,7 @@ export const ColoursStyled = css`
         const prefixes = {
             "bg": (colour: string) => `{ background-color : ${colour} }`,
             "text": (colour: string) => `{ color : ${colour} }`,
-            "border": (colour: string) => `{ border : ${(props: GlobalStyledProps) => props.theme.globals.borderWidth} solid ${colour} }`,
+            "border": (colour: string) => `{ border : ${globalVariables.borderWidth} solid ${colour} }`,
             "fill": (colour: string) => `{ fill : ${colour} }`,
             "stroke": (colour: string) => `{ stroke : ${colour} }`
         };

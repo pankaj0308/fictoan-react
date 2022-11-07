@@ -2,6 +2,11 @@ import { lighten } from "polished";
 
 import { defaultColours } from "fictoan-react";
 
+// GLOBALS  ///////////////////////////////////////////////////////////////////
+export const globalVariables = {
+    borderWidth  : "1px",
+    borderRadius : "8px",
+}
 
 export const FictoanLightTheme = {
     themeName : "FictoanLight",
@@ -64,7 +69,8 @@ export const FictoanLightTheme = {
     //  CARD  /////////////////////////////////////////////////////////////////
     card : {
         bg     : defaultColours.white,
-        border : defaultColours.slate20
+        border : defaultColours.slate20,
+        borderRadius : "8px"
     },
 
     //  INPUT  ////////////////////////////////////////////////////////////////
@@ -129,7 +135,7 @@ export const FictoanLightTheme = {
                 bg           : defaultColours.blue90,
                 border       : defaultColours.blue90,
                 text         : defaultColours.white,
-                borderRadius : "4px"
+                borderRadius : "8px"
             },
             onHover   : {
                 bg     : `${lighten(0.08, defaultColours.blue90)}`,

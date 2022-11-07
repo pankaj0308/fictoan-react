@@ -25,7 +25,7 @@ export const customColours = {
 // GLOBALS  ///////////////////////////////////////////////////////////////////
 export const globalVariables = {
     borderWidth  : "1px",
-    borderRadius : "4px",
+    borderRadius : "8px",
     measurements : {
         nano   : "8px",
         micro  : "24px",

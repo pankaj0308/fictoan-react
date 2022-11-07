@@ -102,6 +102,7 @@ export { Tooltip, TooltipStyled } from "./components/Tooltip";
 
 // THEME  /////////////////////////////////////////////////////////////////////
 export { defaultColours } from "./styles/DefaultColours";
+export { defaultColourProps as listOfColourNames } from "./styles/DefaultColourProps";
 export { FictoanTheme } from "./styles/theme";
 export { ThemeProvider } from "./components/ThemeProvider/ThemeProvider";
 export { ThemeType, ThemeProps, ColourPropTypes } from "./components/Element/constants";
