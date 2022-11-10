@@ -1,11 +1,11 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 import Link from "next/link";
 
-//  Internal deps
+//  INTERFACE
 import { Card, CodeBlock, Element, Heading, HRule, Portion, Row, Table, Text } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { CardDocsStyled } from "./Card.styled";
 import { sampleCard, sampleCardCustomStyling, sampleCardShadow, sampleCardTheme } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

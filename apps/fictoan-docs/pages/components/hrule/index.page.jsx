@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import { Element, Row, Portion, Heading, Text, CodeBlock, HRule, Table } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { HRuleStyled } from "./HRule.styled";
 import { sampleHRuleTheme, sampleHRule, sampleHRuleKinds, sampleHRuleSideMargin } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

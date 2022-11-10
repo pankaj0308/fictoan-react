@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React, { useState } from "react";
 
-//  Internal deps
+//  INTERFACE
 import { Button, CodeBlock, Element, Heading, HRule, InfoPanel, Portion, Row, Table, Text } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { InfoPanelDocsStyled } from "./InfoPanel.styled";
 import {
     sampleInfoPanelCallback,

@@ -1,4 +1,4 @@
-// Local assets
+// ASSETS
 import BaseElementIcon from "../../assets/icons/building-block.svg";
 import HomeIcon from "../../assets/icons/home.svg";
 import ThemeIcon from "../../assets/icons/paintbrush.svg";
@@ -95,8 +95,13 @@ export const sidebarFormsData = [
         icon    : <CheckboxIcon />,
     },
     {
-        path    : "/form/radio-button",
-        title   : "Radio button",
+        path    : "/form/pin-input-field",
+        title   : "PinInput field",
+        // icon    : <InputFieldIcon />,
+    },
+    {
+        path    : "/form/radio-component",
+        title   : "Radio Component",
         icon    : <RadioButtonIcon />,
     },
     {
@@ -117,6 +122,13 @@ export const sidebarComponentsData = [
         title   : "Badge",
         icon    : <BadgeIcon />,
     },
+
+    {
+        path    : "/components/bottom-drawer",
+        title   : "Bottom Drawer",
+        // icon    : <BadgeIcon />,
+    },
+    
     {
         path    : "/components/breadcrumbs",
         title   : "Breadcrumbs",
@@ -168,6 +180,11 @@ export const sidebarComponentsData = [
         icon    : <SidebarIcon />,
     },
     {
+        path    : "/components/spinner",
+        title   : "Spinner",
+        // icon    : <SidebarIcon />,
+    },
+    {
         path    : "/components/table",
         title   : "Table",
         icon    : <TableIcon />,
@@ -181,5 +198,10 @@ export const sidebarComponentsData = [
         path    : "/components/toast",
         title   : "Toast",
         icon    : <ToastIcon />,
+    },
+    {
+        path    : "/components/tooltip",
+        title   : "Tooltip",
+        // icon    : <TableIcon />,
     },
 ];

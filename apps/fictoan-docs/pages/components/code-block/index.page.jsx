@@ -1,12 +1,12 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import { CodeBlock, Element, Heading, HRule, Portion, Row, Table, Text } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { CardDocsStyled } from "./CodeBlock.styled";
-import { sampleCodeBlock } from "./CodeSamples";
+import { sampleCodeBlock, sampleCodeBlockTheme } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";
 
 const CodeBlockDocs = () => {
@@ -163,7 +163,7 @@ const CodeBlockDocs = () => {
                                 Theming
                             </Heading>
 
-                            <CodeBlock source={sampleCodeBlock} language="css" />
+                            <CodeBlock source={sampleCodeBlockTheme} language="css" />
                         </Portion>
                     </Row>
                 </Element>

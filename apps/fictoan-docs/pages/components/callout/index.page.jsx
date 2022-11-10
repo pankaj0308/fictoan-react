@@ -1,7 +1,7 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import {
     Button,
     CodeBlock,
@@ -16,7 +16,7 @@ import {
     Badge,
 } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { CalloutDocsStyled } from "./Callout.styled";
 import { sampleCalloutTheme, sampleCodeInsideCallout } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

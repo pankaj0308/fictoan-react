@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React, { useEffect } from "react";
 
-//  Internal deps
+//  INTERFACE
 import { Element, Row, Portion, Heading, Text, CodeBlock, HRule, Card } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { ColourStyled } from "./Colour.styled";
 import { sampleColourUsage } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

@@ -70,7 +70,6 @@ export const FictoanLightTheme = {
     card : {
         bg     : defaultColours.white,
         border : defaultColours.slate20,
-        borderRadius : "8px"
     },
 
     //  INPUT  ////////////////////////////////////////////////////////////////

@@ -1,9 +1,9 @@
-//  External deps
+//  EXTERNAL DEPS
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-//  Internal deps
+//  INTERFACE
 import {
     HRule,
     SidebarFooter,
@@ -15,11 +15,11 @@ import {
     Text,
 } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { sidebarOverviewData, sidebarFormsData, sidebarComponentsData, sidebarStartData } from "./SidebarData";
 import { SidebarStyled } from "./Sidebar.styled";
 
-// Local assets
+// ASSETS
 import ThemeSwitchIcon from "../../assets/icons/theme.svg";
 import FictoanLogo from "../../assets/images/logo.svg";
 import FictoanIcon from "../../assets/images/logomark.svg";

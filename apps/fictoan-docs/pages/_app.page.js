@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React, { useState } from "react";
 
-//  Internal deps
+//  INTERFACE
 import { ThemeProvider, ContentWrapper } from "fictoan-react";
 
-//  Local components
+//  COMPONENTS
 import Sidebar from "../components/Sidebar/Sidebar";
 import MobileHeader from "../components/MobileHeader/MobileHeader";
 import { FictoanLightTheme } from "../styles/Fictoan.light.theme";

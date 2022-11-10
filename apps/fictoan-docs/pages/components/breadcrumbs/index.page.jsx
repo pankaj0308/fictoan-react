@@ -1,8 +1,8 @@
-//  External deps
+//  EXTERNAL DEPS
 import Link from "next/link";
 import React, { useEffect } from "react";
 
-//  Internal deps
+//  INTERFACE
 import {
     BreadcrumbItem,
     BreadcrumbsWrapper,
@@ -15,7 +15,7 @@ import {
     Text,
 } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { BreadcrumbsStyled } from "./Breadcrumbs.styled";
 import { sampleBreadcrumb, sampleBreadcrumbTheme } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

@@ -1,11 +1,11 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 import Link from "next/link";
 
-//  Internal deps
+//  INTERFACE
 import { CodeBlock, Element, Heading, HRule, Portion, Row, Select, Table, Text } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { SelectDocsStyled } from "./SelectDocs.styled";
 import { sampleSelect, sampleSelectOption, sampleSelectLabel, sampleSelectTheming } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

@@ -20,6 +20,7 @@ export const sampleRadioButton = `<RadioButton
     label="Maybe"
 />`;
 
+
 //  Code sample 02 ////////////////////////////////////////////////////////////
 export const sampleSwitch = `<Switch
     id="switch-1"
@@ -29,7 +30,7 @@ export const sampleSwitch = `<Switch
 />`;
 
 
-//  Code sample 02 ////////////////////////////////////////////////////////////
+//  Code sample 03 ////////////////////////////////////////////////////////////
 export const sampleRadioButtonTheming = `radioButton : {
     inset  : {
         default    : {
@@ -51,3 +52,22 @@ export const sampleRadioButtonTheming = `radioButton : {
         }
     }
 }`;
+
+//  Code sample 04 ////////////////////////////////////////////////////////////
+export const sampleRadioGroup = `<RadioGroup
+    id="radio-group"
+    label="Options"
+    name="group"
+    options={[
+        {
+            id:"radio-1",
+            label:"Option A",
+            value:"Option A"
+        },
+        {
+            id:"radio-2",
+            label:"Option B",
+            value:"Option B"
+        },
+]}
+/>`;

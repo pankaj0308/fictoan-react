@@ -1,4 +1,4 @@
-//  External deps
+//  EXTERNAL DEPS
 import styled from "styled-components";
 
 

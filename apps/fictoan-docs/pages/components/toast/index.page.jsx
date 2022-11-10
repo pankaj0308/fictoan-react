@@ -1,7 +1,7 @@
-//  External deps
+//  EXTERNAL DEPS
 import React, { useState } from "react";
 
-//  Internal deps
+//  INTERFACE
 import {
     Element,
     Button,
@@ -16,7 +16,7 @@ import {
     ToastItem,
 } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { ToastDocsStyled } from "./Toast.styled";
 import {
     sampleToast,

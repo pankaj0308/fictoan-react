@@ -1,7 +1,7 @@
-//  External deps
+//  EXTERNAL DEPS
 import React, { useEffect } from "react";
 
-//  Internal deps
+//  INTERFACE
 import {
     CheckBox,
     CodeBlock,
@@ -15,7 +15,7 @@ import {
     Text,
 } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { CheckBoxDocsStyled } from "./CheckBox.styled";
 import { sampleCheckBox, sampleCheckBoxTheming, sampleSwitch } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

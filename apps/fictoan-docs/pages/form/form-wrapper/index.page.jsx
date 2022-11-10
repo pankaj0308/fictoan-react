@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import { CodeBlock, Element, Heading, HRule, Portion, Row, Table, Text } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { FormDocsStyled } from "./Form.styled";
 import { sampleFormWrapper, sampleFormWrapperSpacing } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

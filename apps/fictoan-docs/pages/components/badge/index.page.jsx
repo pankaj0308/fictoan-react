@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React, { useEffect } from "react";
 
-//  Internal deps
+//  INTERFACE
 import { Element, Row, Portion, Badge, CodeBlock, Heading, HRule, Table, Text } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { RadioButtonDocsStyled } from "./Badge.styled";
 import { sampleBadge, sampleBadgeSibling } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

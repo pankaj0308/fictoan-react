@@ -61,7 +61,6 @@ yarn setup
 ```
 After the above setup, run few commands for `fictoan-docs` setup :
 ```sh
-cd fictoan-docs
 yarn dev
 ```
 

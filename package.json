@@ -7,15 +7,17 @@
     ],
     "scripts": {
         "bootstrap": "lerna bootstrap --use-workspaces",
-        "build": "lerna run --stream build",
+        "build": "lerna exec --scope fictoan-react yarn build",
+        "build:all": "lerna run --stream build",
         "setup": "yarn && yarn bootstrap && yarn build",
         "storybook": "start-storybook -p 6006",
-        "now-build": "build-storybook -c .storybook -o public",
+        "storybook-build": "build-storybook -c .storybook -o public",
         "dev": "lerna exec --scope fictoan-docs yarn dev",
-        "build:app": "lerna exec --scope fictoan-docs build",
-        "start": "lerna exec --scope fictoan-docs start",
+        "build:app": "lerna exec --scope fictoan-docs yarn build",
+        "start": "lerna exec --scope fictoan-docs yarn start",
         "postinstall": "bash scripts/postinstall.sh",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "watch": "lerna exec --scope fictoan-react yarn watch"
     },
     "resolutions": {
         "@types/react": "17.0.2",

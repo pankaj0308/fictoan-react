@@ -9,10 +9,10 @@ import { TabsStyled } from "./Tabs.styled";
 
 // prettier-ignore
 interface TabType {
-    key         :   string;
-    label       :   string;
-    content     :   React.ReactNode;
-    hasAlert  ? : boolean;
+    key        : string;
+    label      : string;
+    content    : React.ReactNode;
+    hasAlert ? : boolean;
 }
 
 // prettier-ignore

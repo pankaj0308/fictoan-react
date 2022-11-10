@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import { Element, Row, Portion, Heading, Text, HRule } from "fictoan-react";
 
-//  Local components
+//  COMPONENTS
 import { ManifestoStyled } from "./Manifesto.styled";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";
 

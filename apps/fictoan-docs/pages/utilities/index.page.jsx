@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import { Heading, HRule, Portion, Row, Table, Text } from "fictoan-react";
 
-//  Local components
+//  COMPONENTS
 import { UtilitiesDocsStyled } from "./UtilitiesDocs.styled";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";
 

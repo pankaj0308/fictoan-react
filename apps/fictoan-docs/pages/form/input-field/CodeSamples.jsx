@@ -8,6 +8,9 @@ export const sampleInputBasicProps = `<InputField
     placeholder="Placeholder"
 />`;
 
+export const sampleInputFileUpload = `<FileUpload
+    label="Select file"
+/>`;
 
 //  Code sample 01 ////////////////////////////////////////////////////////////
 export const sampleInputHelpText = `<InputField

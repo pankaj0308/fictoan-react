@@ -1,7 +1,7 @@
-//  External deps
+//  EXTERNAL DEPS
 import React, { useState } from "react";
 
-//  Internal deps
+//  INTERFACE
 import {
     Button,
     CodeBlock,
@@ -16,7 +16,7 @@ import {
     Text,
 } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { NotificationsDocsStyled } from "./Notifications.styled";
 import {
     sampleNotifications,

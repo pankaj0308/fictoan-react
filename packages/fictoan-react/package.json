@@ -18,7 +18,7 @@
     },
     "license": "MIT",
     "scripts": {
-        "start": "rollup -c -w",
+        "watch": "rollup -c -w",
         "prebuild": "rm -rf dist",
         "build": "rollup -c",
         "predeploy": "$npm_execpath run build",

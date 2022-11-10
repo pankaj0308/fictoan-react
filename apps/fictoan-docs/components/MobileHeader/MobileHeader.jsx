@@ -1,10 +1,10 @@
-// External deps
+// EXTERNAL DEPS
 import React from "react";
 
-// Local components
+// COMPONENTS
 import { MobileHeaderStyled } from "./MobileHeader.styled";
 
-// Local assets
+// ASSETS
 import FictoanLogo from "../../assets/images/logo.svg";
 
 const MobileHeader = (props) => {

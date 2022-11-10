@@ -1,15 +1,15 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import { CodeBlock, Element, Heading, HRule, Portion, Row, Table, Tabs, Text } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { TabsStyled } from "./Tabs.styled";
 import { sampleTabsTabs, sampleTabsTheme, sampleTabs } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";
 
-// Local assets
+// ASSETS
 import SpanishInquisition from "../../../assets/images/spanish-inquisition.jpeg";
 
 

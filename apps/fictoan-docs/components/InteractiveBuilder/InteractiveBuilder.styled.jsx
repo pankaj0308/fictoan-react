@@ -8,8 +8,6 @@ export const InteractiveBuilderStyled = styled.div`
         top        : 16px;
     }
 
-    ul.tab-labels-list { margin : 0; }
-
     .colours-list-wrapper {
         display               : grid;
         grid-template-columns : repeat(10, 1fr);

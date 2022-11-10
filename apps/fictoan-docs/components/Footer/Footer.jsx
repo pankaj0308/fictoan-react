@@ -1,7 +1,7 @@
-//  External dependencies
+//  EXTENRAL DEPS
 import React from "react";
 
-//  Internal dependencies
+// INTERFACE
 import {
     Element,
     Row,
@@ -9,10 +9,10 @@ import {
     Text
 } from "fictoan-react";
 
-//  Local components
+//  COMPONENTS
 import { FooterStyled } from "./Footer.styled";
 
-//  Local assets
+//  ASSETS
 import icon from "../../assets/images/icon-ft-on-dp.svg";
 
 

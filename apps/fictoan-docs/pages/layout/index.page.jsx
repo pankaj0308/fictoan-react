@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import { Element, Row, Portion, Heading, Text, HRule, Card, CodeBlock, Table } from "fictoan-react";
 
-//  Local components
+//  COMPONENTS
 import { LayoutStyled } from "./Layout.styled";
 import {
     sampleRow1,

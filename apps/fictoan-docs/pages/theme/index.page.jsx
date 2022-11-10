@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React, { useEffect } from "react";
 
-//  Internal deps
+//  INTERFACE
 import { CodeBlock, Heading, HRule, Portion, Row, Text } from "fictoan-react";
 
-//  Local components
+//  COMPONENTS
 import { ThemeStyled } from "./Theme.styled";
 import {
     sampleThemeBasics,

@@ -9,6 +9,7 @@ export const TabsStyled = styled.section`
         ul.tab-labels-list {
             padding : 0;
             display : flex;
+            margin  : 0;
 
             li {
                 list-style-type : none;

@@ -65,3 +65,14 @@ export const sampleTableTheme = `table : {
         text : customColours.shade
     },
 }`;
+
+//  Code sample 08 ////////////////////////////////////////////////////////////
+export const sampleTablePagination = `<TablePagination
+    pageIndex={2}
+    rangeStart={1}
+    rangeEnd={4}
+    hasPreviousPage
+    hasNextPage
+    totalRecords={10}
+    onPageChange={(page)=>page}
+/>`

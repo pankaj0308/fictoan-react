@@ -28,7 +28,7 @@ export const CodeStyled = styled.div`
         -webkit-hyphens        : none;
         -ms-hyphens            : none;
         hyphens                : none;
-        border-radius          : ${globalVariables.borderRadius};
+        border-radius            : ${globalVariables.borderRadius};
         -moz-tab-size          : 4;
         tab-size               : 4;
     }

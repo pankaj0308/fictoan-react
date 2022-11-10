@@ -1,11 +1,11 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 import Link from "next/link";
 
-//  Internal deps
+//  INTERFACE
 import { CodeBlock, Element, Heading, HRule, Portion, ProgressBar, Row, Table, Text } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { ProgressbarDocsStyled } from "./ProgressBar.styled";
 import {
     sampleProgressBar,

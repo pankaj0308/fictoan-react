@@ -1,7 +1,7 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import {
     CodeBlock,
     Element,
@@ -14,7 +14,7 @@ import {
     Text,
 } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { ExpandableContentStyled } from "./ExpandableContent.styled";
 import { sampleExpandableContent, sampleOpenExpandableContent } from "./CodeSamples";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

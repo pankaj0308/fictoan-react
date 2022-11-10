@@ -1,10 +1,10 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 
-//  Internal deps
+//  INTERFACE
 import { Element, Row, Portion, Heading, Text, CodeBlock, HRule } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { snippetInstall } from "../../assets/code-samples/CodeSamples";
 import { GettingStartedStyled } from "./GettingStarted.styled";
 import { useDocumentTitle, useScrollToTop } from "hooks/customHooks";

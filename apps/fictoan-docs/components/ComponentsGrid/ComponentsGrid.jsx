@@ -1,8 +1,8 @@
-//  External dependencies
+//  EXTENRAL DEPS
 import React, { useState } from "react";
 import Link from "next/link";
 
-//  Internal dependencies
+// INTERFACE
 import {
     Element,
     Row,
@@ -20,10 +20,10 @@ import {
     BreadcrumbItem, RadioButton, CheckBox, Switch, CodeBlock, Badge, Callout
 } from "fictoan-react";
 
-//  Local components
+//  COMPONENTS
 import { ComponentsGridStyled } from "./ComponentsGrid.styled";
 
-//  Local assets
+//  ASSETS
 import { cardComponentSample } from "../../pages/CodeSamples";
 
 

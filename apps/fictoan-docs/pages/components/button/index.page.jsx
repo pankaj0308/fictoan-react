@@ -1,8 +1,8 @@
-//  External deps
+//  EXTERNAL DEPS
 import React from "react";
 import Link from "next/link";
 
-//  Internal deps
+//  INTERFACE
 import {
     Button,
     Card,
@@ -16,7 +16,7 @@ import {
     Text,
 } from "fictoan-react";
 
-// Local components
+// COMPONENTS
 import { ButtonStyled } from "./Button.styled";
 import {
     sampleButton,
