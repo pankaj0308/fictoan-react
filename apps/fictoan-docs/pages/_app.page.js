@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider theme={currentTheme === "light" ? FictoanLightTheme : FictoanDarkTheme}>
             <GlobalStyle />
 
-            <Sidebar toggleTheme={toggleTheme} isVisible={isSidebarVisible} setIsSidebarVisible={setIsSidebarVisible} />
+            {/* <Sidebar toggleTheme={toggleTheme} isVisible={isSidebarVisible} setIsSidebarVisible={setIsSidebarVisible} /> */}
             <ContentWrapper>
                 <MobileHeader currentTheme={currentTheme} toggleSidebarVisibility={toggleSidebarVisibility} />
 
